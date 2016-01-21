@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="KGk-i7-Jjw" customClass="ZTTGRestrictCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tux-VA-Brs" userLabel="Out Time Refund Btn">
+                        <rect key="frame" x="21" y="10" width="92" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="支持过期退款" image="icon_yes">
+                            <color key="titleColor" red="0.41176470588235292" green="0.74509803921568629" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9Z-g6-4Fp" userLabel="Out Time Refund Btn">
+                        <rect key="frame" x="21" y="40" width="92" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="支持随时退款" image="icon_yes">
+                            <color key="titleColor" red="0.41176470590000003" green="0.74509803919999995" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buY-i6-DoT" userLabel="Out Time Refund Btn">
+                        <rect key="frame" x="229" y="10" width="77" height="22"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <state key="normal" title="已售10000" image="icon_deal_timer">
+                            <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="disabled" image="icon_deal_timer_enabled">
+                            <color key="titleColor" red="0.41176470590000003" green="0.74509803919999995" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6z-Gs-gkn" userLabel="Out Time Refund Btn">
+                        <rect key="frame" x="229" y="40" width="79" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="已售10000" image="icon_deal_soldNumber">
+                            <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="disabled" image="icon_deal_soldNumber_enabled">
+                            <color key="titleColor" red="0.41176470590000003" green="0.74509803919999995" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="t9Z-g6-4Fp" secondAttribute="bottom" constant="7.5" id="FKw-um-fe7"/>
+                    <constraint firstItem="G6z-Gs-gkn" firstAttribute="top" secondItem="buY-i6-DoT" secondAttribute="bottom" constant="8" id="KG2-aJ-I9w"/>
+                    <constraint firstAttribute="bottom" secondItem="G6z-Gs-gkn" secondAttribute="bottom" constant="7.5" id="MST-Lj-z3e"/>
+                    <constraint firstItem="buY-i6-DoT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dji-zi-1Y2"/>
+                    <constraint firstItem="tux-VA-Brs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="htw-m1-HlT"/>
+                    <constraint firstItem="tux-VA-Brs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="lsR-0F-lti"/>
+                    <constraint firstItem="G6z-Gs-gkn" firstAttribute="height" secondItem="buY-i6-DoT" secondAttribute="height" id="nXM-FH-3dr"/>
+                    <constraint firstItem="G6z-Gs-gkn" firstAttribute="leading" secondItem="t9Z-g6-4Fp" secondAttribute="trailing" constant="116" id="nxI-UL-ci6"/>
+                    <constraint firstItem="t9Z-g6-4Fp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="pcn-F8-pwD"/>
+                    <constraint firstItem="t9Z-g6-4Fp" firstAttribute="height" secondItem="tux-VA-Brs" secondAttribute="height" id="urK-fX-SaL"/>
+                    <constraint firstItem="t9Z-g6-4Fp" firstAttribute="top" secondItem="tux-VA-Brs" secondAttribute="bottom" constant="8" id="vDk-kz-sxq"/>
+                    <constraint firstItem="buY-i6-DoT" firstAttribute="leading" secondItem="tux-VA-Brs" secondAttribute="trailing" constant="116" id="vlx-ko-9zE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="LeaveTimeBtn" destination="buY-i6-DoT" id="o44-dn-arR"/>
+                <outlet property="anyTimeRefundBtn" destination="t9Z-g6-4Fp" id="Kr9-Dm-Lvs"/>
+                <outlet property="buyCountBtn" destination="G6z-Gs-gkn" id="8aL-MH-O3o"/>
+                <outlet property="outTimeRefundBtn" destination="tux-VA-Brs" id="3Om-9K-XXe"/>
+            </connections>
+            <point key="canvasLocation" x="485.5" y="315"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_deal_soldNumber" width="14" height="14"/>
+        <image name="icon_deal_soldNumber_enabled" width="14" height="14"/>
+        <image name="icon_deal_timer" width="14" height="14"/>
+        <image name="icon_deal_timer_enabled" width="14" height="14"/>
+        <image name="icon_yes" width="14" height="14"/>
+    </resources>
+</document>

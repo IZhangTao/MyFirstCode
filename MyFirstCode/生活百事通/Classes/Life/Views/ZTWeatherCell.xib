@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="ZTWeatherCell">
+            <rect key="frame" x="0.0" y="0.0" width="508" height="675"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="508" height="675"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weather_default_bg" translatesAutoresizingMaskIntoConstraints="NO" id="8Oe-lE-Yw5">
+                        <rect key="frame" x="0.0" y="0.0" width="508" height="675"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日期" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1R-hm-Iet">
+                        <rect key="frame" x="10" y="71" width="329" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温度" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nE-r9-sHR">
+                        <rect key="frame" x="10" y="109" width="329" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoO-Ke-AT2">
+                        <rect key="frame" x="10" y="147" width="328" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="晴" translatesAutoresizingMaskIntoConstraints="NO" id="AqS-Dj-Ds4" userLabel="weatherImage">
+                        <rect key="frame" x="349" y="20" width="139" height="134"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="139" id="Sg2-L9-dHF"/>
+                            <constraint firstAttribute="height" constant="134" id="yqt-vR-gKq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天气" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMF-54-PjO">
+                        <rect key="frame" x="338" y="194" width="150" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="H8e-hJ-Noe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBc-VN-5sI">
+                        <rect key="frame" x="10" y="30" width="329" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="假如人生不曾相遇，我还是那个我，偶尔做做梦，然后，开始日复一日的奔波，淹没在这喧嚣的城市里。我不会了解，这个世界还有这样的一个你，只有你能让人回味，也只有你会让我心醉。假如人生不曾相遇，我不会相信，有一种人可以百看不厌，有一种人一认识就觉得温馨。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnr-Ka-lHf">
+                        <rect key="frame" x="20" y="238" width="468" height="108"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="风力" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGk-zV-NMd">
+                        <rect key="frame" x="10" y="198" width="308" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="145" id="V7h-o5-A13"/>
+                            <constraint firstAttribute="height" constant="17" id="wKb-Hv-1JB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="V7h-o5-A13"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="Z1R-hm-Iet" firstAttribute="top" secondItem="pBc-VN-5sI" secondAttribute="bottom" constant="20" id="8wh-dk-3BF"/>
+                <constraint firstAttribute="trailing" secondItem="AqS-Dj-Ds4" secondAttribute="trailing" constant="20" id="ANf-5Z-QQt"/>
+                <constraint firstItem="AqS-Dj-Ds4" firstAttribute="leading" secondItem="7nE-r9-sHR" secondAttribute="trailing" constant="10" id="Cue-bx-IgL"/>
+                <constraint firstAttribute="trailing" secondItem="EMF-54-PjO" secondAttribute="trailing" constant="20" id="EhE-X1-IQ2"/>
+                <constraint firstItem="EMF-54-PjO" firstAttribute="leading" secondItem="tGk-zV-NMd" secondAttribute="trailing" constant="20" id="Erj-7U-G7T"/>
+                <constraint firstItem="pBc-VN-5sI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="F24-qY-2oC"/>
+                <constraint firstItem="HoO-Ke-AT2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="H5x-ie-2IG"/>
+                <constraint firstItem="AqS-Dj-Ds4" firstAttribute="leading" secondItem="Z1R-hm-Iet" secondAttribute="trailing" constant="10" id="MuH-Ue-R5n"/>
+                <constraint firstAttribute="trailing" secondItem="HoO-Ke-AT2" secondAttribute="trailing" constant="170" id="P4K-zF-TzU"/>
+                <constraint firstItem="tGk-zV-NMd" firstAttribute="top" secondItem="HoO-Ke-AT2" secondAttribute="bottom" constant="30" id="PUV-pf-e8U"/>
+                <constraint firstItem="HoO-Ke-AT2" firstAttribute="top" secondItem="7nE-r9-sHR" secondAttribute="bottom" constant="20" id="ST1-AR-EFn"/>
+                <constraint firstItem="7nE-r9-sHR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="SyW-mq-SgE"/>
+                <constraint firstItem="EMF-54-PjO" firstAttribute="top" secondItem="AqS-Dj-Ds4" secondAttribute="bottom" constant="40" id="T2Y-Ei-Ybh"/>
+                <constraint firstAttribute="trailing" secondItem="Hnr-Ka-lHf" secondAttribute="trailing" constant="20" id="UlA-cm-IIy"/>
+                <constraint firstItem="Z1R-hm-Iet" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="W4P-xf-ULP"/>
+                <constraint firstItem="Hnr-Ka-lHf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="WzP-H1-Jzg"/>
+                <constraint firstItem="pBc-VN-5sI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="gsk-DK-pXt"/>
+                <constraint firstItem="AqS-Dj-Ds4" firstAttribute="leading" secondItem="pBc-VN-5sI" secondAttribute="trailing" constant="10" id="h2S-cI-svh"/>
+                <constraint firstItem="7nE-r9-sHR" firstAttribute="top" secondItem="Z1R-hm-Iet" secondAttribute="bottom" constant="20" id="mek-hJ-uZm"/>
+                <constraint firstItem="AqS-Dj-Ds4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="vfd-RI-I4X"/>
+                <constraint firstItem="Hnr-Ka-lHf" firstAttribute="top" secondItem="EMF-54-PjO" secondAttribute="bottom" constant="20" id="wPG-lD-asn"/>
+                <constraint firstItem="tGk-zV-NMd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="za5-ZF-mN5"/>
+            </constraints>
+            <size key="customSize" width="410" height="311"/>
+            <connections>
+                <outlet property="PM25" destination="HoO-Ke-AT2" id="eau-JO-vGG"/>
+                <outlet property="cityLabel" destination="pBc-VN-5sI" id="jwg-oE-HYJ"/>
+                <outlet property="dateLable" destination="Z1R-hm-Iet" id="cCn-f5-9eX"/>
+                <outlet property="temperatureLable" destination="7nE-r9-sHR" id="O0p-2k-bqm"/>
+                <outlet property="weatherImageView" destination="AqS-Dj-Ds4" id="kV5-xM-suj"/>
+                <outlet property="weatherLable" destination="EMF-54-PjO" id="Epi-2k-BJY"/>
+                <outlet property="windLable" destination="tGk-zV-NMd" id="WgH-Rq-qNl"/>
+            </connections>
+            <point key="canvasLocation" x="391" y="106.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="weather_default_bg" width="320" height="504"/>
+        <image name="晴" width="128" height="128"/>
+    </resources>
+</document>

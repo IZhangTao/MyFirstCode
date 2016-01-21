@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  生活百事通
+//
+//  Created by zhangtao on 15/11/20.
+//  Copyright (c) 2015年 张涛. All rights reserved.
+//
+
+#ifndef ______PrefixHeader_pch
+#define ______PrefixHeader_pch
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "ZTCommit.h"
+
+
+//导入的公共类
+#import "NSArray+Log.h"
+
+#endif
